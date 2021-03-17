@@ -8,6 +8,10 @@ class CustomerService{
         getCustomers(){
             return axios.get(URL);
         }
+
+        createCustomer(customer){
+            return axios.post(URL, customer);
+        }
 }
 
 
